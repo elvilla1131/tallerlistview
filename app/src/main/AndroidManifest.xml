@@ -9,14 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".principal">
+        <activity android:name=".Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Areas"></activity>
+        <activity android:name=".Areas" />
+        <activity android:name=".Volumenes" />
+        <activity android:name=".Cuadrado" />
+        <activity android:name=".Rectangulo" />
+        <activity android:name=".Circulo" />
+        <activity android:name=".Esfera" />
+        <activity android:name=".Cilindro" />
+        <activity android:name=".Cono" />
+        <activity android:name=".Cubo" />
+        <activity android:name=".ResultadoCuadrado" />
+        <activity android:name=".ResultadoRectangulo" />
+        <activity android:name=".ResultadoTriangulo" />
+        <activity android:name=".ResultadoCirculo" />
+        <activity android:name=".ResultadoEsfera" />
+        <activity android:name=".ResultadoCilindro" />
+        <activity android:name=".ResultadoCono" />
+        <activity android:name=".ResultadoCubo" />
+        <activity android:name=".DatosGuardados" />
+        <activity android:name=".Triangulo"></activity>
     </application>
 
 </manifest>
