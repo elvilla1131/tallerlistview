@@ -1,3 +1,66 @@
 <resources>
     <string name="app_name">TallerListView</string>
+    <string name="opci">OPCIONES</string>
+    <string name="areas">AREAS</string>
+    <string name="volumenes">VOLUMENES</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operación</string>
+    <string name="datos">Datos</string>
+    <string name="resultado">Resultado</string>
+    <string name="operacionesRealizadas">OPERACIONES REALIZADAS</string>
+    <string name="cuadrado">CUADRADO</string>
+    <string name="rectangulo">RECTANGULO</string>
+    <string name="triangulo">TRIANGULO</string>
+    <string name="circulo">CÍRCULO</string>
+    <string name="esfera">ESFERA</string>
+    <string name="cilindro">CILINDRO</string>
+    <string name="cono">CONO</string>
+    <string name="cubo">CUBO</string>
+    <string name="valorLado">Valor del lado:</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="borrar">BORRAR</string>
+    <string name="valorRadio">Valor del radio:</string>
+    <string-array name="opciones">
+        <item>@string/areas</item>
+        <item>@string/volumenes</item>
+        <item>@string/operacionesRealizadas</item>
+    </string-array>
+    <string-array name="areas">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
+    </string-array>
+    <string-array name="volumenes">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </string-array>
+    <string name="areaCuadrado">Área del cuadrado</string>
+    <string name="areaRectangulo">Área del rectangulo</string>
+    <string name="areaCirculo">Área del circulo</string>
+    <string name="areaTriangulo">Área del triangulo</string>
+    <string name="volumenEsfera">Volumen de la esfera</string>
+    <string name="volumenCilindro">Volumen del cilindro</string>
+    <string name="volumenCono">Volumen del cono</string>
+    <string name="volumenCubo">Volumen del cubo</string>
+    <string name="radio2">Radio:</string>
+    <string name="lado2">Lado:</string>
+    <string name="Arista2">Arista:</string>
+    <string name="base2">Base:</string>
+    <string name="altura2">Altura:</string>
+    <string name="errorLado">Digite el lado</string>
+    <string name="errorArista">Digite la arista</string>
+    <string name="errorRadio">Digite el radio</string>
+    <string name="valorBase">Valor de la base:</string>
+    <string name="valorAltura">Valor de la altura:</string>
+    <string name="errorBase">Digite la base</string>
+    <string name="errorAltura">Digite la altura</string>
+    <string name="errorCero">Digite un número diferente de 0</string>
+    <string name="area">Área:</string>
+    <string name="volumen">Volumen:</string>
+    <string name="result">Resultado</string>
+    <string name="volver">VOLVER</string>
+    <string name="valorArista">Valor de la arista:</string>
 </resources>
