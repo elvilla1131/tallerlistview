@@ -19,10 +19,7 @@ public class Cubo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cubo);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaArista = (EditText)findViewById(R.id.txtArista);
+        cajaArista = findViewById(R.id.txtArista);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoCubo.class);

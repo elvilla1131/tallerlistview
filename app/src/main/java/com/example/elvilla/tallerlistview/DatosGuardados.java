@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class DatosGuardados extends AppCompatActivity {
     private TableLayout tabla;
-    private String aux;
     private ArrayList<Operaciones> operacion;
 
     @Override
@@ -19,10 +18,7 @@ public class DatosGuardados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos_guardados);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        tabla = (TableLayout)findViewById(R.id.tblOperaciones);
+        tabla = findViewById(R.id.tblOperaciones);
         operacion = Informacion.getOperaciones();
 
         for (int i = 0;  i < operacion.size(); i++){

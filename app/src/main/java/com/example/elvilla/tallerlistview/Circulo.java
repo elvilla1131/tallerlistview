@@ -20,10 +20,7 @@ public class Circulo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circulo);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaRadio = (EditText)findViewById(R.id.txtRadio);
+        cajaRadio = findViewById(R.id.txtRadio);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoCirculo.class);
@@ -32,16 +29,15 @@ public class Circulo extends AppCompatActivity {
     public void circulo(View v){
         String operacion, dato, rad, aux="";
         double rad2;
-        double pi = 3.14;
 
         if(validar()){
             rad = cajaRadio.getText().toString();
             rad2 = Integer.parseInt(rad);
 
             operacion = resources.getString(R.string.areaCirculo);
-            dato = resources.getString(R.string.radio2)+" "+rad2+"\n"+"Pi: "+pi;
+            dato = resources.getString(R.string.radio2)+" "+rad2+"\n"+"Pi: "+3.14;
 
-            rad2 = (rad2*rad2)*pi;
+            rad2 = (rad2*rad2)*3.14;
             aux = aux+rad2+" mts²";
 
             b.putString("ResultadoCirculo", aux);

@@ -22,11 +22,8 @@ public class Cilindro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cilindro);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaRadio = (EditText)findViewById(R.id.txtRadio3);
-        cajaAltura = (EditText)findViewById(R.id.txtAltura2);
+        cajaRadio = findViewById(R.id.txtRadio3);
+        cajaAltura = findViewById(R.id.txtAltura2);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoCilindro.class);
@@ -36,7 +33,7 @@ public class Cilindro extends AppCompatActivity {
     public void cilindro(View v){
         String operacion, dato, rad,alt, aux="";
         double rad2,alt2,res;
-        double pi = 3.14;
+
 
         if(validar()){
             rad = cajaRadio.getText().toString();
@@ -47,7 +44,7 @@ public class Cilindro extends AppCompatActivity {
             operacion = resources.getString(R.string.volumenCilindro);
             dato = resources.getString(R.string.radio2)+" " + rad2 + "\n"+resources.getString(R.string.altura2)+" " + alt2;
 
-            res = (pi*Math.pow(rad2,2)*alt2);
+            res = (3.14*Math.pow(rad2,2)*alt2);
             aux = aux+res+" mts³";
 
             b.putString("ResultadoCilindro", aux);

@@ -12,7 +12,7 @@ public class ResultadoCono extends AppCompatActivity {
     private Bundle b;
     private String resultado, aux;
     private Resources resources;
-    private Intent in;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

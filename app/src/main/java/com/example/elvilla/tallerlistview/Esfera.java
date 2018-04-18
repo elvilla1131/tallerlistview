@@ -19,10 +19,7 @@ public class Esfera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_esfera);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaRadio = (EditText)findViewById(R.id.txtRadio2);
+        cajaRadio = findViewById(R.id.txtRadio2);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoEsfera.class);
@@ -32,7 +29,7 @@ public class Esfera extends AppCompatActivity {
     public void esfera(View v){
         String operacion, dato, rad, aux="";
         double rad2;
-        double pi = 3.1416;
+
 
         if(validar()){
             rad = cajaRadio.getText().toString();
@@ -41,7 +38,7 @@ public class Esfera extends AppCompatActivity {
             operacion = resources.getString(R.string.volumenEsfera);
             dato = resources.getString(R.string.radio2)+" " + rad2;
 
-            rad2 = (4*pi*Math.pow(rad2,3))/3;
+            rad2 = (4*3.14*Math.pow(rad2,3))/3;
             aux = aux+rad2+" mts³";
 
             b.putString("ResultadoEsfera", aux);

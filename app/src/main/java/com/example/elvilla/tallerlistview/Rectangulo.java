@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class Rectangulo extends AppCompatActivity {
-    private EditText cajaLado;
+    private EditText cajaBase;
+    private EditText cajaAltura;
     private Intent in;
     private Bundle b;
     private Resources resources;
@@ -19,28 +20,28 @@ public class Rectangulo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rectangulo);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaLado = (EditText)findViewById(R.id.txtLadoRec);
+        cajaBase = findViewById(R.id.txtBaseRec);
+        cajaAltura = findViewById(R.id.txtAltura);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoRectangulo.class);
         b = new Bundle();
     }
     public void rectangulo(View v){
-        String operacion, dato, lad, aux="";
-        int lad2;
+        String operacion, dato, base,altura, aux="";
+        int base2,altura2;
 
         if(validar()){
-            lad = cajaLado.getText().toString();
-            lad2 = Integer.parseInt(lad);
+            base = cajaBase.getText().toString();
+            base2 = Integer.parseInt(base);
+            altura = cajaAltura.getText().toString();
+            altura2 = Integer.parseInt(altura);
 
             operacion = resources.getString(R.string.areaRectangulo);
-            dato = resources.getString(R.string.lado2)+" " + lad2;
+            dato = resources.getString(R.string.base2)+" " + base2;
 
-            lad2 = lad2*lad2;
-            aux = aux+lad2+" mts²";
+            base2 = base2*altura2;
+            aux = aux+base2+" mts²";
 
             b.putString("ResultadoRectangulo", aux);
             in.putExtras(b);
@@ -50,12 +51,12 @@ public class Rectangulo extends AppCompatActivity {
         }
     }
     public boolean validar(){
-        if(cajaLado.getText().toString().isEmpty()){
-            cajaLado.setError(resources.getString(R.string.errorLado));
+        if(cajaBase.getText().toString().isEmpty()){
+            cajaBase.setError(resources.getString(R.string.errorLado));
             return false;
         }
-        if(cajaLado.getText().toString().equalsIgnoreCase("0")){
-            cajaLado.setError(resources.getString(R.string.errorCero));
+        if(cajaBase.getText().toString().equalsIgnoreCase("0")){
+            cajaBase.setError(resources.getString(R.string.errorCero));
             return false;
         }
         return true;
@@ -65,7 +66,7 @@ public class Rectangulo extends AppCompatActivity {
     }
 
     public void limpiar(){
-        cajaLado.setText("");
-        cajaLado.requestFocus();
+        cajaBase.setText("");
+        cajaBase.requestFocus();
     }
 }

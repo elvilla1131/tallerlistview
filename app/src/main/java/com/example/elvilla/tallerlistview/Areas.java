@@ -21,9 +21,6 @@ public class Areas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_areas);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
         lv=(ListView)findViewById(R.id.lvAreas);
         resources = this.getResources();
         opc = resources.getStringArray(R.array.areas);

@@ -19,10 +19,7 @@ public class Cuadrado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuadrado);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaLado = (EditText)findViewById(R.id.txtLado);
+        cajaLado = findViewById(R.id.txtLado);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoCuadrado.class);

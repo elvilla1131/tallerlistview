@@ -20,11 +20,8 @@ public class Cono extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cono);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        cajaRadio = (EditText)findViewById(R.id.txtRadio4);
-        cajaAltura = (EditText)findViewById(R.id.txtAltura3);
+        cajaRadio = findViewById(R.id.txtRadio4);
+        cajaAltura = findViewById(R.id.txtAltura3);
         resources = this.getResources();
 
         in = new Intent(this,ResultadoCono.class);
@@ -33,7 +30,7 @@ public class Cono extends AppCompatActivity {
     public void cono(View v){
         String operacion, dato, rad,alt, aux="";
         double rad2,alt2,res;
-        double pi = 3.14;
+
 
         if(validar()){
             rad = cajaRadio.getText().toString();
@@ -44,7 +41,7 @@ public class Cono extends AppCompatActivity {
             operacion = resources.getString(R.string.volumenCono);
             dato = resources.getString(R.string.radio2)+" " + rad2 + "\n"+resources.getString(R.string.altura2)+" " + alt2;
 
-            res = (pi*Math.pow(rad2,2)*alt2)/3;
+            res = (3.14*Math.pow(rad2,2)*alt2)/3;
             aux = aux+res+" mts³";
 
             b.putString("ResultadoCono", aux);
