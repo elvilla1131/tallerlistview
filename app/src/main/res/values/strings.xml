@@ -1,25 +1,25 @@
 <resources>
     <string name="app_name">TallerListView</string>
-    <string name="opci">OPCIONES</string>
-    <string name="areas">AREAS</string>
-    <string name="volumenes">VOLUMENES</string>
+    <string name="opci">Opciones</string>
+    <string name="areas">Areas</string>
+    <string name="volumenes">Volumenes</string>
+    <string name="operacionesRealizadas">Operaciones Realizadas</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="circulo">Cìrculo</string>
+    <string name="esfera">Esfera</string>
+    <string name="cilindro">Cilindro</string>
+    <string name="cono">Cono</string>
+    <string name="cubo">Cubo</string>
     <string name="numero">No.</string>
     <string name="operacion">Operación</string>
-    <string name="datos">Datos</string>
+    <string name="datos">Datos Guardados</string>
     <string name="resultado">Resultado</string>
-    <string name="operacionesRealizadas">OPERACIONES REALIZADAS</string>
-    <string name="cuadrado">CUADRADO</string>
-    <string name="rectangulo">RECTANGULO</string>
-    <string name="triangulo">TRIANGULO</string>
-    <string name="circulo">CÍRCULO</string>
-    <string name="esfera">ESFERA</string>
-    <string name="cilindro">CILINDRO</string>
-    <string name="cono">CONO</string>
-    <string name="cubo">CUBO</string>
-    <string name="valorLado">Valor del lado:</string>
-    <string name="calcular">CALCULAR</string>
-    <string name="borrar">BORRAR</string>
-    <string name="valorRadio">Valor del radio:</string>
+    <string name="valorLado">Lado:</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="valorRadio">Radio:</string>
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/volumenes</item>
@@ -53,14 +53,14 @@
     <string name="errorLado">Digite el lado</string>
     <string name="errorArista">Digite la arista</string>
     <string name="errorRadio">Digite el radio</string>
-    <string name="valorBase">Valor de la base:</string>
-    <string name="valorAltura">Valor de la altura:</string>
+    <string name="valorBase">Base:</string>
+    <string name="valorAltura">Altura:</string>
     <string name="errorBase">Digite la base</string>
     <string name="errorAltura">Digite la altura</string>
     <string name="errorCero">Digite un número diferente de 0</string>
     <string name="area">Área:</string>
     <string name="volumen">Volumen:</string>
     <string name="result">Resultado</string>
-    <string name="volver">VOLVER</string>
-    <string name="valorArista">Valor de la arista:</string>
+    <string name="volver">Volver</string>
+    <string name="valorArista">Arista:</string>
 </resources>
